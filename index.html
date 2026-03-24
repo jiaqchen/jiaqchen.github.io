@@ -24,6 +24,25 @@
         .paper-row:hover .paper-summary { visibility: visible; }
       }
       .paper-summary.show { visibility: visible; }
+
+      @media screen and (max-width: 768px) {
+        .paper-row td {
+          display: block;
+          width: 100% !important;
+          text-align: center;
+        }
+        .paper-row td img {
+          width: 80%;
+          max-width: 300px;
+          height: auto;
+        }
+        .paper-row td:last-child {
+          text-align: left;
+        }
+        .paper-summary {
+          visibility: visible;
+        }
+      }
     </style>
 
   </head>
