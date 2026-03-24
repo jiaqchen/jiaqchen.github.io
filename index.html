@@ -9,6 +9,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+      .paper-row { position: relative; }
+      .paper-summary {
+        display: none;
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 8px 12px;
+        margin-top: 6px;
+        font-style: italic;
+        color: #555;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+      @media (hover: hover) {
+        .paper-row:hover .paper-summary { display: block; }
+      }
+      .paper-summary.show { display: block; }
+    </style>
 
   </head>
 
@@ -47,9 +66,9 @@
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-            <tr>
+            <tr class="paper-row">
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/egoverse.png" alt="EgoVerse" width="264">
+                <img src="images/egoverse.png" alt="EgoVerse" width="343">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://egoverse.ai/">
@@ -60,16 +79,15 @@
                 <br>
                 <em>Preprint</em>, 2025
                 <br>
-                <br>
-                <em style="color:#555;">1,362 hours of human demos across 240 scenes and 2,087 people — a collaborative platform that lets anyone contribute egocentric data to train robots at scale.</em><br>
+                <span class="paper-summary">1,362 hours of human demos across 240 scenes and 2,087 people — a collaborative platform that lets anyone contribute egocentric data to train robots at scale.</span>
                 <a href="https://egoverse.ai/">project page</a> /
                 <a href="https://egoverse.ai/assets/pdf/EgoVerse.pdf">pdf</a>
               </td>
             </tr>
 
-            <tr>
+            <tr class="paper-row">
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/react3d.png" alt="REACT3D" width="264">
+                <img src="images/react3d.png" alt="REACT3D" width="343">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://arxiv.org/abs/2510.11340">
@@ -80,16 +98,15 @@
                 <br>
                 <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2026
                 <br>
-                <br>
-                <em style="color:#555;">Takes a static 3D scan and automatically figures out which parts open, how they move, and what's behind them — making any scene simulation-ready without manual annotation.</em><br>
+                <span class="paper-summary">Takes a static 3D scan and automatically figures out which parts open, how they move, and what's behind them — making any scene simulation-ready without manual annotation.</span>
                 <a href="https://react3d.github.io/">project page</a> /
                 <a href="https://arxiv.org/abs/2510.11340">arXiv</a>
               </td>
             </tr>
 
-            <tr>
+            <tr class="paper-row">
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/nerf-on-the-go.png" alt="NeRF On-the-go" width="264">
+                <img src="images/nerf-on-the-go.png" alt="NeRF On-the-go" width="343">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://arxiv.org/abs/2405.18715">
@@ -100,16 +117,15 @@
                 <br>
                 <em>CVPR</em>, 2024
                 <br>
-                <br>
-                <em style="color:#555;">Casually captured photos full of pedestrians, cars, and changing light? No problem — we use uncertainty to filter out the mess and still get clean novel views.</em><br>
+                <span class="paper-summary">Casually captured photos full of pedestrians, cars, and changing light? No problem — we use uncertainty to filter out the mess and still get clean novel views.</span>
                 <a href="https://rwn17.github.io/nerf-on-the-go/">project page</a> /
                 <a href="https://arxiv.org/abs/2405.18715">arXiv</a>
               </td>
             </tr>
 
-            <tr>
+            <tr class="paper-row">
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/where-am-i.png" alt="Where am I?" width="264">
+                <img src="images/where-am-i.png" alt="Where am I?" width="343">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://arxiv.org/abs/2404.14565">
@@ -120,15 +136,14 @@
                 <br>
                 <em>ECCV</em>, 2024
                 <br>
-                <br>
-                <em style="color:#555;">Describe a place in words — "the kitchen with the red fridge" — and we'll find it in a collection of 3D scene graphs. Language-based localization without coordinates.</em><br>
+                <span class="paper-summary">Describe a place in words — "the kitchen with the red fridge" — and we'll find it in a collection of 3D scene graphs. Language-based localization without coordinates.</span>
                 <a href="https://arxiv.org/abs/2404.14565">arXiv</a>
               </td>
             </tr>
 
-            <tr>
+            <tr class="paper-row">
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/human-rob-team.png" alt="Human-Robot Teaming" width="264">
+                <img src="images/human-rob-team.png" alt="Human-Robot Teaming" width="343">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://arxiv.org/abs/2310.02392">
@@ -139,15 +154,14 @@
                 <br>
                 <em>ICRA</em>, 2024
                 <br>
-                <br>
-                <em style="color:#555;">A mixed-reality interface that lets you see through walls to where your robots are, watch their maps build in real-time, and drag-and-drop them to new goals.</em><br>
+                <span class="paper-summary">A mixed-reality interface that lets you see through walls to where your robots are, watch their maps build in real-time, and drag-and-drop them to new goals.</span>
                 <a href="https://arxiv.org/abs/2310.02392">arXiv</a>
               </td>
             </tr>
 
-            <tr>
+            <tr class="paper-row">
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/rob-calligraphy.png" alt="Robot Calligraphy" width="264">
+                <img src="images/rob-calligraphy.png" alt="Robot Calligraphy" width="343">
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://arxiv.org/abs/1911.08002">
@@ -158,8 +172,7 @@
                 <br>
                 <em>IROS</em>, 2020 &nbsp; <span style="color:#b00;">(Best Entertainment and Amusement Paper Award Finalist)</span>
                 <br>
-                <br>
-                <em style="color:#555;">Teaching a robot arm to write beautiful Chinese calligraphy by turning each brushstroke into a trajectory optimization problem over factor graphs with a dynamic brush model.</em><br>
+                <span class="paper-summary">Teaching a robot arm to write beautiful Chinese calligraphy by turning each brushstroke into a trajectory optimization problem over factor graphs with a dynamic brush model.</span>
                 <a href="https://arxiv.org/abs/1911.08002">arXiv</a>
               </td>
             </tr>
@@ -179,5 +192,16 @@
         </td>
       </tr>
     </table>
+    <script>
+      // On touch devices, tap a paper row to toggle its summary
+      document.querySelectorAll('.paper-row').forEach(function(row) {
+        row.addEventListener('click', function(e) {
+          if (!matchMedia('(hover: none)').matches) return;
+          if (e.target.closest('a')) return; // don't block link clicks
+          var summary = row.querySelector('.paper-summary');
+          if (summary) summary.classList.toggle('show');
+        });
+      });
+    </script>
   </body>
 </html>
